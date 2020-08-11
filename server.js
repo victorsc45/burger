@@ -1,9 +1,8 @@
-const mysql = require('mysql');
+const connection = require('./config/connection')
 const express = require('express');
+const body_parser = require('body-parser');
 const dotenv = require("dotenv").config();
 
-
-const PORT = process.env.PORT || 8080;
 
 const app = express();
 
@@ -11,8 +10,8 @@ const app = express();
 app.use(express.static("public"));
 
 // Parse application body as JSON
-app.use(express.urlencoded({ extended: true }));
-app.use(express.json());
+app.use(body_parser.urlencoded({ extended: true }));
+app.use(body_parser.json());
 
 // Set Handlebars.
 const exphbs = require("express-handlebars");
@@ -21,7 +20,7 @@ app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
 // Import routes and give the server access to them. for the burger schema!!!!!!!!!!!!!!!!!!!!
-const routes = require("./controllers/burgerController.js");
+const routes = require("./controllers/burgers_controller.js");
 
 app.use(routes);
 
