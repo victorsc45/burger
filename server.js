@@ -1,9 +1,9 @@
-const connection = require('./config/connection')
+const connection = require('./config/connection');
 const express = require('express');
 const body_parser = require('body-parser');
 const dotenv = require("dotenv").config();
 
-
+const PORT = process.env.PORT || 3006;
 const app = express();
 
 // Serve static content for the app from the "public" directory in the application directory.
@@ -25,7 +25,7 @@ const routes = require("./controllers/burgers_controller.js");
 app.use(routes);
 
 // Start our server so that it can begin listening to client requests.
-app.listen(PORT, () => {
+app.listen(PORT, function () {
     // Log (server-side) when our server has started
     console.log("Server listening on: http://localhost:" + PORT);
 });
