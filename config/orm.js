@@ -39,8 +39,9 @@ function objToSql(ob) {
   return arr.toString();
 }
 
-// Object for all our SQL statement functions.
+// Object Relational Mapping for all our SQL statement functions.
 let orm = {
+  //ORM select all query from burgers table
   selectAll: (tableInput, cb) => {
     let query = "SELECT * FROM " + tableInput + ";";
     connection.query(query, (err, result) => {
@@ -50,6 +51,7 @@ let orm = {
       cb(result);
     });
   },
+  // ORM insert query for adding a burger
   insertOne: (table, cols, vals, cb) => {
     let query = "INSERT INTO " + table;
 
@@ -70,7 +72,7 @@ let orm = {
       cb(result);
     });
   },
-  // An example of objColVals would be {name: panther, sleepy: true}
+  // update a burger
   updateOne: (table, objColVals, condition, cb) => {
     let query = "UPDATE " + table;
 
@@ -88,6 +90,7 @@ let orm = {
       cb(result);
     });
   },
+  // ORM delete a burger
   delete: function (table, condition, cb) {
     var queryString = "DELETE FROM " + table;
     queryString += " WHERE ";
@@ -103,5 +106,5 @@ let orm = {
   }
 };
 
-// Export the orm object for the model (burger.js). use burger js here!!!!!!!!!!!!!!!!!!!
+// Export the orm object for the model (burger.js).
 module.exports = orm;
