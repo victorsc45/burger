@@ -3,7 +3,7 @@ const mysql = require("mysql");
 const dotenv = require("dotenv").config();
 //process environment encapsulated for privacy
 //sql connection creation
-const connection;
+let connection;
 if (process.env.JAWSDB_URL) {
   connection = mysql.createConnection(process.env.JAWSDB_URL);
 }
