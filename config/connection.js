@@ -1,6 +1,6 @@
 // Set up MySQL connection.
 const mysql = require("mysql");
-const dotenv = require("dotenv").config();
+require("dotenv").config();
 //process environment encapsulated for privacy
 //sql connection creation
 let connection;
