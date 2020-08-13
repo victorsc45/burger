@@ -1,6 +1,8 @@
 // Set up MySQL connection.
 const mysql = require("mysql");
 const dotenv = require("dotenv").config();
+//process environment encapsulated for privacy
+//sql connection creation
 const connection = mysql.createConnection({
   host: process.env.DB_HOST,
   // port local is 3306
@@ -18,5 +20,5 @@ connection.connect(function (err) {
   }
   console.log("connected as id " + connection.threadId);
 });
-
+//exports connection for the server
 module.exports = connection;
