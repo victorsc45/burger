@@ -1,0 +1,59 @@
+/* border inside box size */
+* {
+    box-sizing: border-box;
+}
+/* set body weight and background properties */
+
+body 
+{
+    background-color: #fff;
+    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+    background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
+    font-size: 18px;
+    line-height: 32px;
+    font-family: 'Arial', 'Helveticaa Neue', Arial, Helvetica, sans-serif;
+    color: #777;
+    margin: 0px, 0px;
+}
+h1 {
+    text-align: center;
+}
+h2 {
+    text-align: center;
+}
+p {
+    text-align: center;
+}
+.form-group {
+    display: flex;
+  align-items: center;
+  justify-content: center;
+}
+li {
+    margin-bottom: 30px;
+}
+label {
+    margin-right: 20px;
+}
+#newburger {
+    height: 30px;
+    width: 320px;
+    margin-right: 20px;
+}
+strong {
+    margin-right: 20px;
+}
+.panel-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.panel {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+     }
