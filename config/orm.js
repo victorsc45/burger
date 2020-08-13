@@ -72,7 +72,7 @@ let orm = {
       cb(result);
     });
   },
-  // update a burger
+  // update a burger to devoured
   updateOne: (table, objColVals, condition, cb) => {
     let query = "UPDATE " + table;
 

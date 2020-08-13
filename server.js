@@ -1,7 +1,8 @@
-const connection = require('./config/connection');
+//dependencies for server file 
+
 const express = require('express');
 const body_parser = require('body-parser');
-const dotenv = require("dotenv").config();
+require("dotenv").config();
 
 const PORT = process.env.PORT || 3006;
 const app = express();
@@ -15,11 +16,11 @@ app.use(body_parser.json());
 
 // Set Handlebars.
 const exphbs = require("express-handlebars");
-
+//handlebars required setup engine and default layout
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
-// Import routes and give the server access to them. for the burger schema!!!!!!!!!!!!!!!!!!!!
+// Import routes and give the server access to them.
 const routes = require("./controllers/burgers_controller.js");
 
 app.use(routes);

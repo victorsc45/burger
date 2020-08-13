@@ -14,8 +14,8 @@ let burger = {
   updateOne: (objColVals, condition, cb) => {
     orm.updateOne("burgers", objColVals, condition, (res) => cb(res));
   },
-  delete: function (condition, cb) {
-    orm.delete("burgers", condition, function (res) {
+  delete: (condition, cb) => {
+    orm.delete("burgers", condition, (res) => {
       cb(res);
     });
   }
