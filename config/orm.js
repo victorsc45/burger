@@ -43,11 +43,11 @@ function objToSql(ob) {
 let orm = {
   selectAll: (tableInput, cb) => {
     let query = "SELECT * FROM " + tableInput + ";";
-    connection.query(query, (err, res) => {
+    connection.query(query, (err, result) => {
       if (err) {
         throw err;
       }
-      cb(res);
+      cb(result);
     });
   },
   insertOne: (table, cols, vals, cb) => {
@@ -62,12 +62,12 @@ let orm = {
 
     console.log(query);
 
-    connection.query(query, vals, (err, res) => {
+    connection.query(query, vals, (err, result) => {
       if (err) {
         throw err;
       }
 
-      cb(res);
+      cb(result);
     });
   },
   // An example of objColVals would be {name: panther, sleepy: true}
@@ -80,25 +80,25 @@ let orm = {
     query += condition;
 
     console.log(query);
-    connection.query(query, (err, res) => {
+    connection.query(query, (err, result) => {
       if (err) {
         throw err;
       }
 
-      cb(res);
+      cb(result);
     });
   },
-  deleteOne: (table, condition, cb) => {
-    let query = "DELETE FROM " + table;
-    query += " WHERE ";
-    query += condition;
+  delete: function (table, condition, cb) {
+    var queryString = "DELETE FROM " + table;
+    queryString += " WHERE ";
+    queryString += condition;
 
-    connection.query(query, (err, res) => {
+    connection.query(queryString, function (err, result) {
       if (err) {
         throw err;
       }
 
-      cb(res);
+      cb(result);
     });
   }
 };
