@@ -2,9 +2,9 @@
 fun with MVC, ORM, MYSQL,EXPRESS, and Express-Handlebars
 
 
- [![npm version](https://badgen.net/npm/v/inquirer-emoji)](https://www.npmjs.com/package/inquirer-emoji)
+ 
 
-[![4.17.1](http://versionbadg.es//[victorsc45]/[burger].svg)](https://npmjs.org/package/[ORM])
+[![npm version](http://versionbadg.es//[victorsc45]/[burger].svg)](https://img.shields.io/npm/v/badges.svg)
 
  # Licence
   
