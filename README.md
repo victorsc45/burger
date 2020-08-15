@@ -1,8 +1,11 @@
 # burger
-fun with MVC, ORM, MYSQL,EXPRESS, and Express-Handlebars
+Fun with MVC, ORM, MYSQL, EXPRESS, and Express-Handlebars
 
+[![npm version](https://img.shields.io/badge/express--handlebars-----v5.1.0-orange)](https://www.npmjs.com/package/express-handlebars)
 
- [![npm version](https://badgen.net/npm/v/inquirer-emoji)](https://www.npmjs.com/package/inquirer-emoji)
+[![npm version](https://img.shields.io/badge/mysql-----v2.18.1-blue)](https://www.npmjs.com/package/mysql)
+
+[![npm version](https://img.shields.io/badge/body--parser-----v1.19.0-blue)](https://www.npmjs.com/package/express)
 
 [![npm version](https://img.shields.io/badge/Express-----v4.17.1-brightgreen)](https://www.npmjs.com/package/express)
 
