@@ -12,7 +12,7 @@ $(function () {
             type: "POST",
             data: newBurger
         }).then(() => {
-            // Reload the page to get the updated list
+            // Reload the page to get the updated list of burgers
             location.reload();
         });
     });

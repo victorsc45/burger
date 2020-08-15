@@ -3,7 +3,7 @@
 const express = require('express');
 const burger = require("../models/burger");
 const router = express.Router();
-//requesting all obj from database to handlebars view
+//requesting all objs from database to handlebars view
 router.get('/', (req, res) => {
     burger.selectAll((data) => {
         let hdbrsObj = {

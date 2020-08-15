@@ -2,7 +2,7 @@
 const mysql = require("mysql");
 env = require("dotenv").config();
 //process environment encapsulated for privacy
-//sql connection creation
+//sql connection creation to heroku DB env called JAWSDB
 let connection;
 if (process.env.JAWSDB_URL) {
   connection = mysql.createConnection(process.env.JAWSDB_URL);

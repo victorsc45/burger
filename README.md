@@ -152,16 +152,24 @@ Fun with MVC, ORM, MYSQL, EXPRESS, and Express-Handlebars
 
  ### Credits
 
-#### https://www.w3schools.com/jsref/jsref_splice.asp
-#### https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/findIndex
+#### https://developer.okta.com/blog/2018/06/28/tutorial-build-a-basic-crud-app-with-node
+#### https://www.bootstrapcdn.com/fontawesome/
 #### https://stackoverflow.com
 #### https://www.npmjs.com/package/express
-#### https://www.npmjs.com/
+#### https://www.npmjs.com/package/body-parser
+#### https://www.npmjs.com/package/mysql
+#### https://www.npmjs.com/package/dotenv
+#### https://www.bing.com/videos/search?q=burger+using+MVC&docid=608021198551844948&      mid=D383FF452DE19C57B7C8D383FF452DE19C57B7C8&view=detail&FORM=VIRE
+#### https://shields.io/category/dependencies
+#### https://stackoverflow.com/questions/20727020/remove-padding-in-jumbotron-bootstrap-3
+#### https://unsplash.com/@hermez777  burger photo free on unsplash
+#### https://www.transparenttextures.com/patterns/concrete-wall.png
+
 # Testing
 
 **testing I have provided a screenshot of final handlebars deployed html view**
 
-<img src="./public/assets/img/Devour-some-burgers" width="500px" >
+<img src="./public/assets/img/Devour-some-burgers.JPG" width="500px" >
 
 
 
