@@ -6,8 +6,7 @@
 
 body 
 {
-    background-color: #fff;
-    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+       /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
     background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
     font-size: 18px;
     line-height: 32px;
@@ -15,6 +14,12 @@ body
     color: #777;
     margin: 0px, 0px;
 }
+/* consistent background for jumbotron */
+#jumbo {
+    background: transparent; 
+    padding: 0px 0px 0px 0px;
+}
+/* align all text on index page to center */
 h1 {
     text-align: center;
 }
@@ -24,11 +29,13 @@ h2 {
 p {
     text-align: center;
 }
+/* center input area text and submit buttonds */
 .form-group {
     display: flex;
   align-items: center;
   justify-content: center;
 }
+/* separate the ul items for better legibility */
 li {
     margin-bottom: 30px;
 }
@@ -43,6 +50,7 @@ label {
 strong {
     margin-right: 20px;
 }
+/* style panels on left and right side with burger info in them */
 .panel-heading {
     display: flex;
     align-items: center;
@@ -52,6 +60,7 @@ strong {
     margin-left: 40px;
     margin-right: 40px;
 }
+/* center img in jumbotron */
 .center {
     display: block;
     margin-left: auto;
